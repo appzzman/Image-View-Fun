@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImageViewFun" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yYp-bW-R9t">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="307"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2l-af-r13">
+                                <rect key="frame" x="271" y="417" width="57" height="30"/>
+                                <state key="normal" title="Animate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="animate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jmD-oo-Ocr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="M2l-af-r13" secondAttribute="bottom" constant="153" id="NRf-GO-Gnk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yYp-bW-R9t" secondAttribute="bottom" constant="293" id="PUG-AI-dbH"/>
+                            <constraint firstItem="M2l-af-r13" firstAttribute="centerX" secondItem="yYp-bW-R9t" secondAttribute="centerX" id="Qg3-91-igf"/>
+                            <constraint firstItem="yYp-bW-R9t" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="r1t-zY-tuL"/>
+                            <constraint firstAttribute="trailing" secondItem="yYp-bW-R9t" secondAttribute="trailing" id="sfN-Id-6oc"/>
+                            <constraint firstItem="yYp-bW-R9t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="w0J-r1-of4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="yYp-bW-R9t" id="jMJ-jE-sds"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="320" y="424"/>
+        </scene>
+    </scenes>
+</document>
