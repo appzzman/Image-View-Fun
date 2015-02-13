@@ -32,9 +32,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func animate(sender: AnyObject) {
-        self.imageView.animationDuration = 1
+        self.imageView.animationDuration = 2
         self.imageView.animationImages = frames
-        self.imageView.animationRepeatCount = 1
+        self.imageView.animationRepeatCount = 0
         self.imageView.startAnimating()
     }
     
